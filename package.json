@@ -1,0 +1,11 @@
+{
+  "name": "mailer",
+  "version": "1.0.0",
+  "description": "mail scheduler",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Abdullah Jamal",
+  "license": "ISC"
+}
