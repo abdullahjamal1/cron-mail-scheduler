@@ -78,6 +78,11 @@ function validateSchedule(schedule) {
     if (scheduled === "recurring") {
 
         second = '*/20';
+        month = '*';
+        hour = '*';
+        monthDay = '*';
+        month = '*';
+        weekDay = '*';
     }
     else if (scheduled === "weekly") {
 
