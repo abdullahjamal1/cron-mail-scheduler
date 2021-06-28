@@ -5,5 +5,8 @@
   "password": "while1mail_gmail_pass",
   "google-client-id": "while1mail_google_clientId",
   "google-client-secret": "while1mail_google_client_secret",
-  "db": "while1mail_mongodb_url"
+  "db": "while1mail_mongodb_url",
+  "frontend-url": "while1mail_frontend_url",
+  "app-url": "while1mail_app_url",
+  "google-callback-url": "while1mail_google_callback_url"
 }
