@@ -1,11 +1,45 @@
 {
-  "name": "mailer",
+  "name": "while1mail",
   "version": "1.0.0",
-  "description": "mail scheduler",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "jest --watchAll --env=node",
+    "start": "node index.js"
   },
-  "author": "Abdullah Jamal",
-  "license": "ISC"
+  "engines": {
+    "node": "12.20.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "fawn": "^2.1.5",
+    "helmet": "^4.6.0",
+    "joi": "^13.1.0",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.5",
+    "node": "^15.14.0",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0",
+    "querystring": "^0.2.1",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.7"
+  },
+  "devDependencies": {
+    "jest": "^22.2.2",
+    "supertest": "^6.1.3"
+  }
 }
