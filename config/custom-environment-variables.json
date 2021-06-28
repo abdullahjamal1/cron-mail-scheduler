@@ -1,5 +1,6 @@
 {
   "jwtPrivateKey": "while1mail_jwtPrivateKey",
+  "jwt-mail-verification-key": "while1mail_mail_verification_key",
   "email": "while1mail_email",
   "password": "while1mail_gmail_pass",
   "google-client-id": "while1mail_google_clientId",

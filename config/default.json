@@ -1,6 +1,6 @@
 {
   "jwtPrivateKey": "",
-  "jwt-mail-verification-key": "asdf",
+  "jwt-mail-verification-key": "",
   "app-url": "http://localhost:4000",
   "db": "mongodb://localhost/while1mail",
   "email": "test",
@@ -9,5 +9,5 @@
   "google-client-secret": "",
   "google-callback-url": "http://localhost:4000/api/auth/google/callback",
   "frontend-url": "http://localhost:3000/",
-  "isEmailMock": true
+  "isEmailMock": false
 }
