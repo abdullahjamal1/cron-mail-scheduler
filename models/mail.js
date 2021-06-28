@@ -105,8 +105,8 @@ function validateMail(mail) {
 
     const schema = {
 
-        to: Joi.array().items(Joi.string().min(5).max(255).required().email()),
-        cc: Joi.array().items(Joi.string().min(5).max(255).required().email()),
+        to: Joi.array().items(Joi.string().min(5).max(255).required().email()).required(),
+        cc: Joi.array().items(Joi.string().min(5).max(255).email()),
         subject: Joi.string().required(),
         body: Joi.string().required(),
         scheduled: Joi.string().required(),
