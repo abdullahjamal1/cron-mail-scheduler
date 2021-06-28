@@ -12,8 +12,8 @@ require('./startup/validation')();
 // production dependency
 require('./startup/prod')(app);
 
-// const port = process.env.PORT || 3000;
-const port = 4000;
+const port = process.env.PORT || 4000;
+
 const server = app.listen(port, () => logger.info(`Listening on port ${port}...`));
 
 module.exports = server;
