@@ -2,3 +2,7 @@ node_modules/
 logs/
 coverage/
 testing_sample/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
