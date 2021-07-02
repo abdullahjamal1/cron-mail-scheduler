@@ -63,9 +63,12 @@ function updateSchedule(_id, schedule, mailOptions) {
 // on startUp
 async function intializeScheduler() {
 
-    const mails = await Mail.findAll();
+    const mails = await Mail.find({});
     mails.forEach(mail => {
-        newSchedule(mail._id, mail.schedule, mail);
+
+        const { _id, from, to, cc, subject, body, schedule } = mail;
+        const mailOptions = { from, to, cc, subject, body, schedule };
+        newSchedule(_id, schedule, mailOptions);
     });
 }
 function validateSchedule(schedule) {
@@ -114,7 +117,7 @@ function validateSchedule(schedule) {
 
     }
     schedule = { scheduled, month, monthDay, minute, hour, second, weekDay };
-    console.log(schedule);
+    // console.log(schedule);
 
     return schedule;
 }

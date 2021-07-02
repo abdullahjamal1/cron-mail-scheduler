@@ -17,12 +17,13 @@ async function send(mailOptions) {
         return null;
     }
 
-    const { to, subject, text, html } = mailOptions;
+    const { to, cc, subject, text, html } = mailOptions;
 
     // for testing purpose just login the email in console
     return await transporter.sendMail({
         from: config.get('email'), // sender address
         to, // comma separated list of receivers
+        cc,
         subject, // Subject line
         text, // plain text body
         html, // html body

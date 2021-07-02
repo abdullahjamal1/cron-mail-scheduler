@@ -8,9 +8,11 @@ require('./startup/routes')(app);
 require('./startup/db')();
 require('./startup/config')();
 require('./startup/validation')();
-
 // production dependency
 require('./startup/prod')(app);
+
+// uncomment to loadDataIntoScheduler
+// require('./startup/scheduler')();
 
 const port = process.env.PORT || 4000;
 

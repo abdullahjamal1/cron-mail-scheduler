@@ -47,14 +47,14 @@ router.post('/', [auth, validate(validateMail)], async (req, res) => {
 
     schedule = validateSchedule(schedule);
     if (!schedule) return res.status(400).send('schedule Date/time not supplied');
-    
+
     const from = await User.findById(req.user._id);
-    
+
     const newMail = { from, to, cc, subject, body, schedule };
     const mail = new Mail(newMail);
-    
+
     await mail.save();
-    
+
     newSchedule(mail._id, mail.schedule, newMail);
 
     return res.send(mail);
