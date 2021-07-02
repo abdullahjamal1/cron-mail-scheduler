@@ -4,5 +4,6 @@ coverage/
 testing_sample/
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
+.elasticbeanstalk/
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
