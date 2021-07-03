@@ -3,8 +3,6 @@ const { sendCustomMail } = require('../services/mail');
 const { Mail, schedulerSchema } = require('../models/mail');
 const { saveMailLog } = require('../models/mailLog');
 
-// TODO: implement cron validate
-
 /*
 second	0-59
 minute	0-59
@@ -28,7 +26,8 @@ function setSchedule({ scheduled, second, minute, hour, monthDay, month, weekDay
             saveMailLog(mailOptions);
 
         }, {
-            scheduled: false
+            scheduled: false,
+            timezone: "Asia/Kolkata"
         });
     return trigger;
 }
